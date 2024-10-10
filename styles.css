@@ -14,8 +14,8 @@ html {
 }
 
 header {
-    background-color: #ffffff;
-    padding: 20px;
+    background-color: #ffffffe6;
+    padding: 0px;
     text-align: center;
     position: fixed;
     width: 100%;
@@ -47,7 +47,7 @@ header {
 .hero {
     background-color: white;
     text-align: center;
-    margin-top: -329px;
+    margin-top: -10%;
     position: relative;
     height: 329px;
     width: 97%;
@@ -275,7 +275,7 @@ footer {
 .team-member p {
     font-size: 1rem;
     color: #777;
-    padding: 0 10px 20px;
+    padding: 0 10px 0px;
 }
 
 #certifications {
@@ -384,7 +384,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
+    gap: 8px;
 }
 
 .contact-item {
@@ -497,21 +497,50 @@ footer p {
     /* For mobile or smaller screens, adjust FAQ item width */
     .faq-item {
         width: 80%; /* Full width for smaller screens */
-        max-width: 80%; /* Ensures it doesn't exceed screen width */
+        max-width: 95%; /* Ensures it doesn't exceed screen width */
     }
     
     /* Adjust catalogue item images for mobile with horizontal scroll */
     .catalogue-grid {
-        display: flex;
-        flex-direction: row; /* Make items horizontal */
-        overflow-x: auto; /* Enable horizontal scroll */
+        display: grid;
+        grid-template-columns: auto auto;
         gap: 20px; /* Spacing between items */
-        padding: 10px; /* Ensure padding to keep the first item visible */
-        scroll-snap-type: x mandatory; /* Ensures smooth snapping behavior when scrolling */
+        padding: 10px; /* Ensure padding to keep the first item 
     }
 
     .catalogue-grid::-webkit-scrollbar {
         display: none; /* Hide scrollbar on Webkit browsers */
+    }
+
+    .why-choose-list{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+    }
+
+    .why-choose-item{
+        padding: 10px;
+        width: 155px;
+    }
+
+    .cert-grid{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+    }
+
+    .team-grid{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+    }
+
+    .team-member{
+        width: 145px;
+    }
+    .cert-item{
+        padding: 10px;
+        width: 155px;
     }
 
     .catalogue-item {
@@ -545,6 +574,16 @@ footer p {
         width: 80%;
         padding: 20px; /* Further reduce padding for smaller devices */
     }
+
+    .logo img{
+        height: 100px;
+    }
+
 }
 
+@media (max-width: 430px) {
+.hero{
+    margin-top: 0px
+}
+}
 
