@@ -418,6 +418,7 @@ footer {
 .contact-info p strong {
     color: #1D2A44;
     font-size: 1.3rem;
+    text-align: left;
 }
 
 #faq {
