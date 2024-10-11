@@ -33,10 +33,23 @@
             </div>
         </nav>
     </header>
+    <div class="navi">
+        <div class="nav-links">
+            <div class="nav-item"><a href="#hero-cont">HOME</a></div>
+            <div class="nav-item"><a href="#export-catalogue">CATALOGUE</a></div>
+            <div class="nav-item"><a href="#testimonials">TESTIMONIALS</a></div>
+            <div class="nav-item"><a href="#about-summary">ABOUT US</a></div>
+            <div class="nav-item"><a href="#certifications">AUTHENTIC</a></div>
+            <div class="nav-item"><a href="#team">TEAM</a></div>
+            <div class="nav-item"><a href="#contact">CONTACT</a></div>
+            <div class="nav-item"><a href="#faq">FAQ</a></div>
+        </div>
+        
+</div>
 
     
 
-        <div class="hero-cont">
+        <div id="hero-cont" class="hero-cont">
             <img src="export.jpg" width="100%" alt="">
 
             <div class="hero">
@@ -75,7 +88,7 @@ flex-direction: column;
 align-items: center;">
 
             <h3 style="font-size: 35px;margin: 5px;">Testimonials from Our Global Partners</h3>
-            <div class="testimonials">
+            <div id="testimonials" class="testimonials">
                 <div class="testi-item">
                     <p>"Alifraa has been a reliable partner for our natural rubber needs. Their commitment to quality
                         and
@@ -113,29 +126,7 @@ align-items: center;">
                         Procurement
                         at Zenith Industries</p>
                 </div>
-                <div class="testi-item">
-                    <p>"Alifraa is a trusted partner for our agricultural imports. Their ability to meet deadlines while
-                        maintaining quality standards sets them apart in the export industry." - Raj Patel, CEO of
-                        AgroExports Ltd.</p>
-                </div>
-                <div class="testi-item">
-                    <p>"Alifraa’s dedication to quality and sustainability in natural rubber and agricultural products
-                        has
-                        helped us enhance our offerings to customers across the globe." - Linda Johnson, Supply Chain
-                        Manager at UrbanFarms International</p>
-                </div>
-                <div class="testi-item">
-                    <p>"We’ve been working with Alifraa for several months, and their team consistently delivers
-                        high-quality products on time. Their responsiveness and commitment are truly appreciated." -
-                        Carlos
-                        Mendez, Director of Operations at TradeLink</p>
-                </div>
-                <div class="testi-item">
-                    <p>"Alifraa has been a fantastic partner in helping us source natural rubber and fresh produce.
-                        Their
-                        commitment to sustainability and top-tier service makes them a preferred choice for us." - Meera
-                        Kapoor, Founder of EcoTrade Ventures</p>
-                </div>
+              
             </div>
         </section>
 
@@ -144,7 +135,7 @@ align-items: center;">
 flex-direction: column;
 align-items: center;">
 
-            <div class="about-summary">
+            <div id="about-summary" class="about-summary1">
                 <h3 style="    font-size: 25px;">About Alifraa</h3>
                 <p style="    font-size: 1rem;
     text-align: justify;">Alifraa is an Indian export business that specializes in providing high-quality natural
@@ -309,8 +300,9 @@ align-items: center;">
                 <div class="social-icons">
                    
                     <a href="https://www.instagram.com/alifraa_/" target="_blank"><img src="instagramicon.png" alt="Instagram"></a>
-                    <a href="https://x.com/alifraa_" target="_blank"><img src="xicon.png" alt="Instagram"></a>
-                     <a href="https://www.linkedin.com/company/alifraa/" target="_blank"><img src="linkedinicon.png" alt="Instagram"></a>
+                    <a href="https://x.com/alifraa_" target="_blank"><img src="xicon.png" alt="x"></a>
+                     <a href="https://www.linkedin.com/company/alifraa/" target="_blank"><img src="linkedinicon.png" alt="LinkedIn"></a>
+                     <a href="https://whatsapp.com/channel/0029VaroGJcHVvTkDNxJp602/" target="_blank"><img src="whatsappicon.png" alt="WhatsApp"></a>
                 </div>
             </div>
         </div>
@@ -374,33 +366,11 @@ align-items: center;">
 
     </footer>
 
-    <script>
-        function openModal(id) {
-            document.getElementById(id).style.display = "block";
-        }
 
-        function closeModal(id) {
-            document.getElementById(id).style.display = "none";
-        }
-
-
-        const faqItems = document.querySelectorAll('.faq-item');
-
-        faqItems.forEach(item => {
-            item.addEventListener('click', () => {
-                item.classList.toggle('active');
-            });
-        });
-
-       window.addEventListener('load', function () {
-        const preloader = document.getElementById('preloader');
-        preloader.style.display = 'none';
-    });
-    </script>
+    <script src="scripts.js"></script>
 
 
 </body>
 
 </html>
-
 
