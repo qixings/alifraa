@@ -111,7 +111,7 @@ footer {
     scroll-snap-type: x mandatory;
     gap: 15px;
     padding: 20px;
-    width: 88%;
+    width: 92%;
     margin-left: 52px;
 
 }
@@ -564,6 +564,16 @@ footer p {
 
     .logo img{
         height: 100px;
+    }
+    .testimonials {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 15px;
+        padding: 18px;
+        width: 81%;
+        margin-left: 11px;
+    
     }
 
 }
